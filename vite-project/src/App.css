@@ -1,0 +1,501 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* font-family: sans-serif; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Source Sans Pro", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+#search1 {
+    border: none;
+}
+
+@media only screen and (min-width:769px) and (max-width:2560px) {
+    #navbarnav {
+        position: sticky;
+        z-index: 3;
+        top: 0;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    #title {
+        background: linear-gradient(50deg, #fb3c00, #ffb800);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 800;
+        font-size: 30px;
+    }
+
+    #cart:hover {
+        background-color: white;
+        border: 1px solid orange;
+        color: orange;
+    }
+
+    #login:hover {
+        background-color: white;
+        border: 1px solid orange;
+        color: orange;
+    }
+
+    #cart {
+        background-color: white;
+        border: 1px solid white;
+        color: orange;
+    }
+
+    #pizza:hover {
+        transition: all 1s ease-in-out;
+        transform: translateY(-20px);
+    }
+
+
+    #star {
+        font-size: 60px;
+        font-weight: 800;
+        font-family: sans-serif;
+        color: whitesmoke;
+    }
+
+    #bike {
+        color: #F17228;
+        background-color: rgba(241, 114, 40, 0.15);
+        border-color: rgba(0, 0, 0, 0);
+        border-radius: 15px;
+    }
+
+    #bike1:hover {
+        color: #F17228;
+        background-color: rgba(241, 114, 40, 0.15);
+        border-color: rgba(0, 0, 0, 0);
+        border-radius: 15px;
+    }
+
+    #box {
+        color: #424242;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+    }
+
+    #box1 {
+        border: 0 solid #E0E0E0;
+        border-radius: 0.25rem;
+        outline: none;
+        color: #424242;
+        background-color: #f5f5f5;
+
+    }
+
+    #find {
+        background-color: #F17228;
+        color: white;
+        border: 0 solid #E0E0E0;
+        border-radius: 15px;
+    }
+
+    .cards {
+        border: 1px solid orange;
+    }
+
+    #cartimg {
+        height: 80px;
+        width: 80px;
+    }
+
+    #quality {
+        border: 1px solid rgba(255, 238, 235, 1.0);
+        background-color: rgba(255, 238, 235, 1.0);
+        border-radius: 30px;
+    }
+
+    #ontime {
+        background-color: rgba(246, 242, 255, 1.0);
+        border: 1px solid rgba(246, 242, 255, 1.0);
+        border-radius: 30px;
+    }
+
+    #clean {
+        background-color: rgba(255, 242, 221, 1.0);
+        border: 1px solid rgba(255, 242, 221, 1.0);
+        border-radius: 30px;
+    }
+
+    #orderyour {
+        background-color: rgba(239, 251, 242, 1.0);
+        border: 1px solid rgba(239, 251, 242, 1.0);
+        border-radius: 30px;
+    }
+
+    /* #percentage {
+        background-color: orange;
+        height: 80px;
+        width: 140px;
+     
+        margin-top: 178px;
+        border: 1px solid orange;
+        border-top-right-radius: 30px;
+        position: absolute;
+        border-bottom-left-radius: 30px;
+
+
+    }
+
+    #days {
+        color: #F17228;
+        background-color: rgba(241, 114, 40, 0.15);
+        border-color: rgba(0, 0, 0, 0);
+        border-radius: 15px;
+    }
+
+    #cards {
+        
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+       
+    }
+
+    #popular {
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+    } */
+    .cards:hover {
+        background-color: #f0f0f0;
+    }
+
+    .cards:hover .overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .add-to-cart-btn {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    .cards:hover .add-to-cart-btn {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .chicken {
+        border: 1px solid orange;
+        /* background-color: orange; */
+        border-radius: 50px;
+        /* margin-top: 100px !important; */
+    }
+
+    .chicken5:hover {
+        border: 1px solid orange;
+        border-radius: 50px;
+    }
+
+    #chicken1 {
+        border: 1px solid orange;
+        border-radius: 50%;
+    }
+
+    #chicken2 {
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+
+    #chicken2:hover {
+        border: 1px solid orange;
+        border-radius: 50%;
+    }
+
+    #dish {
+        color: orange;
+        text-decoration: none;
+        background-color: white;
+        border: none;
+    }
+
+    #dish1 {
+        color: black;
+        text-decoration: none;
+        background-color: white;
+        border: none;
+    }
+
+    #dish1:hover {
+        color: orange;
+    }
+    #dishimg:hover{
+        transform: scale(1.1);
+    }
+    #forms {
+        color: orange;
+        border: 1px solid orange;
+        border-radius: 30px;
+        align-items: center;
+    }
+
+    .no-border {
+        border-top: none;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid orange;
+        /* border: 1px solid white; */
+        /* border-radius: 30px; */
+        outline: none;
+        /* Optional: Removes the outline when focused */
+    }
+
+    .btnn {
+        background-color: white;
+        border: 1px solid orange;
+        border-radius: 30px;
+        color: orange;
+    }
+
+    .btnn:hover {
+        color: white;
+        background-color: #F17228;
+    }
+
+    /* .bestdeals{
+        margin-top: 200px;
+    }
+    #deals{
+        background: url("https://technext.github.io/foodwagon/v1.0.0/assets/img/gallery/cta-two-bg.png");
+        background-attachment: fixed;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #proceedto{
+        color: white;
+        text-decoration: none;
+        border: 1px solid #F17228;
+        background-color: #F17228;
+    } */
+    #footer{
+        /* background: rgba(0, 0, 0, 0.6); */
+        background-color: #212121 !important;
+    }
+
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    #login {
+        background-color: white;
+        border: 1px solid whitesmoke !important;
+        color: orange;
+    }
+
+    #cart {
+        background-color: white;
+        border: 1px solid white;
+        color: orange;
+    }
+
+    #star {
+        font-size: 30px !important;
+        color: whitesmoke !important;
+    }
+
+    #bike {
+        color: #F17228;
+        background-color: rgba(241, 114, 40, 0.15);
+        border-color: rgba(0, 0, 0, 0);
+        border-radius: 15px;
+    }
+
+    #bike1:hover {
+        color: #F17228;
+        background-color: rgba(241, 114, 40, 0.15);
+        border-color: rgba(0, 0, 0, 0);
+        border-radius: 15px;
+    }
+
+    #box {
+        color: #424242;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+    }
+
+    #box1 {
+        border: 0 solid #E0E0E0;
+        border-radius: 0.25rem;
+        color: #424242;
+        background-color: #f5f5f5;
+
+    }
+
+    #find {
+        background-color: #F17228;
+        color: white;
+        border: 0 solid #E0E0E0;
+        border-radius: 15px;
+    }
+
+    #quality {
+        border: 1px solid rgba(255, 238, 235, 1.0);
+        background-color: rgba(255, 238, 235, 1.0);
+        border-radius: 30px;
+    }
+
+    #ontime {
+        background-color: rgba(246, 242, 255, 1.0);
+        border: 1px solid rgba(246, 242, 255, 1.0);
+        border-radius: 30px;
+    }
+
+    #clean {
+        background-color: rgba(255, 242, 221, 1.0);
+        border: 1px solid rgba(255, 242, 221, 1.0);
+        border-radius: 30px;
+    }
+
+    #orderyour {
+        background-color: rgba(239, 251, 242, 1.0);
+        border: 1px solid rgba(239, 251, 242, 1.0);
+        border-radius: 30px;
+    }
+
+
+    /* #percentage {
+        background-color: orange;
+        height: 80px;
+        width: 120px;
+        margin-top: 200px;
+        border: 1px solid orange;
+        border-top-right-radius: 30px;
+        position: absolute;
+        border-bottom-left-radius: 30px;
+
+
+    }
+
+    #days {
+        color: #F17228;
+        background-color: rgba(241, 114, 40, 0.15);
+        border-color: rgba(0, 0, 0, 0);
+        border-radius: 15px;
+    }
+
+    #cards {
+       
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    #popular {
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+    } */
+
+    #add {
+        border: 1px solid orange;
+        border-radius: 15px;
+        background-color: orange;
+    }
+
+    .chicken {
+        border: 1px solid orange;
+        /* background-color: orange; */
+        border-radius: 50px;
+        /* margin-top: 100px !important; */
+    }
+
+    .chicken5:hover {
+        border: 1px solid orange;
+        border-radius: 50px;
+    }
+
+    #chicken1 {
+        border: 1px solid orange;
+        border-radius: 50%;
+    }
+
+    #chicken2 {
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+
+    #chicken2:hover {
+        border: 1px solid orange;
+        border-radius: 50%;
+    }
+
+    #dish {
+        color: orange;
+        text-decoration: none;
+        background-color: white;
+        border: 1px solid white;
+    }
+
+    #dish1 {
+        color: black;
+        background-color: white;
+        border: 1px solid white;
+        text-decoration: none;
+    }
+
+    #dish1:hover {
+        color: orange;
+    }
+
+    #forms {
+        color: orange;
+        border: 1px solid orange;
+        border-radius: 30px;
+    }
+
+    .no-border {
+        border: none;
+        border: 1px solid white;
+        border-radius: 30px;
+        outline: none;
+        /* Optional: Removes the outline when focused */
+    }
+
+    .btnn {
+        background-color: white;
+        border: 1px solid orange;
+        border-radius: 30px;
+        color: orange;
+    }
+
+    .btnn:hover {
+        color: white;
+        background-color: #F17228;
+    }
+
+    #footer{
+        /* background: rgba(0, 0, 0, 0.6); */
+        background-color: #212121;
+    }
+
+
+}
