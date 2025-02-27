@@ -324,7 +324,7 @@ const Home = () => {
                 <a class="nav-link" href="#"></a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link  " href="#"><i class="bi bi-geo-alt-fill me-2 me-lg-4" style={{ color: 'orange' }} ></i>current Location near PVR towers kalavasal, Madurai-18</a>
+                <a class="nav-link  " href="#"><i class="bi bi-geo-alt-fill me-2 me-lg-4" style={{ color: 'orange' }} ></i>current Location near PVR towers kalavasal, Madurai-16</a>
               </li>
             </ul>
             <nav class="navbar navbar-light  ">
