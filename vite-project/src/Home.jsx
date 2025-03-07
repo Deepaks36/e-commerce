@@ -118,7 +118,16 @@ const Home = () => {
     localStorage.removeItem("id")
     await alert("logout Sucessfully")
     navii('/')
-    setCart([" "])
+    const cartsid= localStorage.getItem("cartid")
+    try {
+      axios.delete(`http://localhost:8080/cart/${cartsid}`);
+      // console.log(response);
+      getcarts()
+    } catch (error) {
+      console.log(error);
+      
+    }
+    // setCart([" "])
   }
 
   // const logincart=()=>{
@@ -197,7 +206,12 @@ const Home = () => {
         // { headers: { "Content-Type": "application/json" } }
       );
 
-      console.log("Product added to cart:", response.data);
+      const cartid=response.data.id
+      console.log(cartid,"=========================");
+      
+      localStorage.setItem("cartid",cartid)
+
+      console.log("Product added to cart:", response.data.quantity);
     } catch (error) {
       console.error("Error adding to cart:", error);
     }
@@ -444,7 +458,7 @@ const Home = () => {
                     <button className='btn'><i class="bi bi-plus-circle"></i></button>
                     <span className=''>{x.quantity}</span>
                     <button className='btn'><i class="bi bi-dash-circle "></i></button>
-                    <Button className='ms-2 ' >pay</Button>
+                    <Button className='ms-2 '>pay</Button>
                   </div>
                 </div>
               </div>
