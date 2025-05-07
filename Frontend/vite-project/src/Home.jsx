@@ -245,6 +245,7 @@ const Home = () => {
 
 
   let fun = () => {
+    // 'http://beta.hrmetrics.mv/api/Item/GetItems'
     axios.get('http://localhost:8080/path')
       .then((res) => {
         setfood(res.data)
