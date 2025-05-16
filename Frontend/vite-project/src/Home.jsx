@@ -406,8 +406,8 @@ const Home = () => {
         <Modal.Body>
           <div className="container-fluid">
             <div className="container">
-              <div className="row ">
-                <div className='col-12 '>
+              <div className="row">
+                <div className='col-12'>
                   <div class="card " id='forms' style={{ width: 18 + "rem" }}>
                     <div class="card-body ">
                       <form action="" className='justify-content-center' >
