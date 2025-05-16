@@ -405,7 +405,7 @@ const Home = () => {
         </Modal.Header>
         <Modal.Body>
           <div className="container-fluid">
-            <div className="container ">
+            <div className="container">
               <div className="row ">
                 <div className='col-12 '>
                   <div class="card " id='forms' style={{ width: 18 + "rem" }}>
